@@ -1,0 +1,19 @@
+[package]
+name = "bitfield-access"
+description = "Ergonomic low-level bitfield access on raw byte types"
+version = "0.1.0"
+edition = "2021"
+repository = "https://github.com/darsor/bitfield-access"
+license = "MIT OR Apache-2.0"
+keywords = ["bitfield", "buffer", "bit", "bitslice", "bitrange"]
+categories = [
+    "no-std",
+    "embedded",
+    "parsing",
+    "encoding",
+    "network-programming",
+]
+readme = "README.md"
+
+[dependencies]
+num = { version = "0.4.3", default-features = false }
