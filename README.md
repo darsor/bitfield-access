@@ -27,7 +27,7 @@ Let's say you've received some bytes from the network and want to parse then as 
 
 You might use the `BitfieldAccess` trait as follows:
 
-```
+```rust
 use bitfield_access::BitfieldAccess;
 
 // Simulated network buffer containing an IPv4 packet
@@ -67,7 +67,7 @@ assert_eq!(ipv4_packet[8], 21);
 If the bit indices are outside the array bounds or the bitfield doesn't fit in the
 requested integer type, it panics.
 
-```should_panic
+```rust should_panic
 # use bitfield_access::BitfieldAccess;
 # let ipv4_packet: [u8; 4] = [
 #     0x45, 0x00, 0x00, 0x54, // Version(4), IHL(5), DSCP(0), ECN(0), Total Length(84)
