@@ -16,4 +16,4 @@ categories = [
 readme = "README.md"
 
 [dependencies]
-num = { version = "0.4.3", default-features = false }
+num-traits = { version = "0.2.19", default-features = false }

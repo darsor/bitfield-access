@@ -6,7 +6,7 @@ use core::{
     ops::{Bound, RangeBounds},
 };
 
-use num::{traits::CheckedShr, PrimInt, Unsigned};
+use num_traits::{CheckedShr, PrimInt, Unsigned};
 
 #[inline]
 fn bitmask<T: PrimInt + Unsigned>(bit_width: usize) -> T {
